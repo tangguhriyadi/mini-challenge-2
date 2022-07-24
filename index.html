@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="judul">Registration Form</h1>
+        <h2 class="sub-judul">Please fill out this form with the required information
+        </h2>
+        <form method="get" action="https://register-demo.freecodecamp.org" class="main-form" >
+            <label for="first-name" class="sub-judul">First Name :</label>
+            <input class="input-text" type="text" id="first-name" name="first-name"  required>
+            <label  for="last-name" class="sub-judul">Last Name :</label>
+            <input class="input-text"  type="text" id="last-name" name="last-name"  required>
+            <label for="email" class="sub-judul">Enter Your Email :</label>
+            <input class="input-text"  type="email" id="email" name="email"  required>
+            <label for="password" class="sub-judul">Enter Your Password :</label>
+            <input  class="input-text"  type="password" id="password" name="password"  required>
+            <label for="bio" class="sub-judul" >Provide bio :</label>
+            <textarea  type="text-area" id="bio" name="bio" style="margin-bottom: 32px;"> </textarea>
+            <div class="radio-choice" >
+                <input class="input-radio" type="radio" id="personal" name="choose" checked>
+                <label class="sub-judul" for="personal">Personal Account </label>
+                <input class="input-radio" type="radio" id="Business" name="choose" style="margin-left:27px;">
+                <label class="sub-judul" for="Business">Business Account </label>
+            </div>
+            <div class="accept" style="margin-top:32px;" >
+                <input class="input-radio" type="checkbox" id="acceptTerm" name="acceptTerm" required>
+                <label class="sub-judul" for="acceptTerm">I accept the <a href="terms.html" target="_blank">terms and condition</a> </label>
+            </div>
+            <button class="btn-submit" type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
